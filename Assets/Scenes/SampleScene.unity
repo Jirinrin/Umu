@@ -637,7 +637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259037223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -20.35, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1280615170}
@@ -724,7 +724,7 @@ ParticleSystem:
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 1
+  autoRandomSeed: 0
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
@@ -5499,6 +5499,7 @@ GameObject:
   - component: {fileID: 1280615172}
   - component: {fileID: 1280615171}
   - component: {fileID: 1280615173}
+  - component: {fileID: 1280615174}
   m_Layer: 0
   m_Name: Rain
   m_TagString: Untagged
@@ -5514,7 +5515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280615169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 28.86, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1259037224}
@@ -5602,7 +5603,7 @@ ParticleSystem:
   prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 1
+  autoRandomSeed: 0
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
@@ -5667,7 +5668,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6217,7 +6218,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
+    m_Position: {x: 0, y: 30, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
     m_Scale: {x: 30, y: 1, z: 1}
     placementMode: 0
@@ -7623,7 +7624,7 @@ ParticleSystem:
     inWorldSpace: 0
   InheritVelocityModule:
     enabled: 0
-    m_Mode: 0
+    m_Mode: 1
     m_Curve:
       serializedVersion: 2
       minMaxState: 0
@@ -8065,7 +8066,7 @@ ParticleSystem:
     magnitude:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -10254,6 +10255,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9057174ab0558b4e82cc4966d6f07de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1280615174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280615169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f04a9c01bf63c40846384ddb1c5888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTime: 2
+  simulationSpeedScale: 1
 --- !u!1 &1340683431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6990706402129029551, guid: 9a74251ba1199644480db597309fb9ab,
