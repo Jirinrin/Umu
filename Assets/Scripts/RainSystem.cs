@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(ParticleSystem))]
-[RequireComponent(typeof(ReverseParticleSystem))]
+[RequireComponent(typeof(ReverseParticleSystemSimple))]
 public class RainSystem : MonoBehaviour
 {
     private float rot;
     private ParticleSystem ps;
     private ParticleSystem.ShapeModule sh;
-    private ReverseParticleSystem rv;
+    private ReverseParticleSystemSimple rv;
 
     private const float distanceToCamera = 35f;
 
@@ -18,13 +18,13 @@ public class RainSystem : MonoBehaviour
     {
         ps = GetComponent<ParticleSystem>();
         sh = ps.shape;
-        rv = GetComponent<ReverseParticleSystem>();
+        rv = GetComponent<ReverseParticleSystemSimple>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (Time.time > 6f)
+        if (Time.time > 5f)
             rv.StopReverse();
         else if (Time.time > 3f)
             rv.StartReverse();
