@@ -8,7 +8,7 @@ public class ReverseParticleSystem : MonoBehaviour
 
     float[] simulationTimes;
 
-    private bool reverseActive = false;
+    private bool reverseActive;
 
     public float simulationSpeedScale = 1.0f;
 
@@ -66,8 +66,6 @@ public class ReverseParticleSystem : MonoBehaviour
         if (reverseActive)
             return;
 
-        Debug.Log("start!!");
-
         reverseActive = true;
     }
 
@@ -76,9 +74,7 @@ public class ReverseParticleSystem : MonoBehaviour
         if (!reverseActive)
             return;
 
-        Debug.Log("reverse!!");
-
-        this.reverseActive = false;
+        reverseActive = false;
 
         for (int i = particleSystems.Length - 1; i >= 0; i--)
         {
