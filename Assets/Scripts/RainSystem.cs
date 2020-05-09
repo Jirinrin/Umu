@@ -24,7 +24,7 @@ public class RainSystem : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Time.time > 5f)
+        if (Time.time > 8f)
             rv.StopReverse();
         else if (Time.time > 3f)
             rv.StartReverse();

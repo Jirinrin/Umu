@@ -29,15 +29,10 @@ public class ReverseParticleSystemSimple : MonoBehaviour
             particleSystem.Simulate(simulationTime, true, false, true);
 
             if (simulationTime < 0f)
-            {
-                particleSystem.Play(true);
-                particleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
-            }
+                simulationTime = particleSystem.main.duration-.0001f;
         }
         else
-        {
             simulationTime = particleSystem.time;
-        }
     }
 
     public void StartReverse()
