@@ -76,11 +76,14 @@ public class ReverseParticleSystem : MonoBehaviour
 
         reverseActive = false;
 
-        for (int i = particleSystems.Length - 1; i >= 0; i--)
-        {
-            particleSystems[i].Simulate(simulationTimes[i], false, false, true);
-            particleSystems[i].Play(false);
-        }
+        particleSystems[0].Simulate(simulationTimes[0], true, false, true);
+        particleSystems[0].Play(true);
+
+        // for (int i = particleSystems.Length - 1; i >= 0; i--)
+        // {
+        //     particleSystems[i].Simulate(simulationTimes[i], false, false, true);
+        //     particleSystems[i].Play(false);
+        // }
     }
 }
 
