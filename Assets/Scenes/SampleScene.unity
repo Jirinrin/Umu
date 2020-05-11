@@ -152,10 +152,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6653680127980804105, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4802705601693375885, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4702613505861190022, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
       propertyPath: m_Name
       value: golf
+      objectReference: {fileID: 0}
+    - target: {fileID: -4702613505861190022, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4139671339965983674, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
@@ -312,6 +327,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2010609113228051730, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -837376956289437948, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -192875335475741903, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -81006907282799232, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 106637791653378334, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -337,6 +372,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 16.509
       objectReference: {fileID: 0}
+    - target: {fileID: 400619961982022928, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2022554372636087762, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -361,6 +401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 14.995001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559740853152321384, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2962572661505728251, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
@@ -407,6 +452,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.0000017785918
       objectReference: {fileID: 0}
+    - target: {fileID: 4264065468888648873, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4602110109073156192, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -430,6 +480,11 @@ PrefabInstance:
     - target: {fileID: 4602110109073156192, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5340640655212368499, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5675479161203318936, guid: 9a74251ba1199644480db597309fb9ab,
@@ -457,6 +512,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 9.747001
       objectReference: {fileID: 0}
+    - target: {fileID: 6990706402129029551, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234191600149388039, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8893956171690896638, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -480,6 +545,11 @@ PrefabInstance:
     - target: {fileID: 8893956171690896638, guid: 9a74251ba1199644480db597309fb9ab,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062492110344910931, guid: 9a74251ba1199644480db597309fb9ab,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -724,7 +794,7 @@ ParticleSystem:
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 0
+  autoRandomSeed: 1
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
@@ -5593,7 +5663,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280615169}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 8
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5661,14 +5731,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: 2
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 20
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9285,7 +9355,7 @@ ParticleSystem:
     radiusScale: 0.4
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 55
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -10264,7 +10334,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1280615169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f04a9c01bf63c40846384ddb1c5888, type: 3}
+  m_Script: {fileID: 11500000, guid: 397648751657ed242bc28731a2548e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   simulationSpeedScale: 1
