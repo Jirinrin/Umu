@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: ShaderResources
   m_EditorClassIdentifier: 
   shaders:
+  - {fileID: 4800000, guid: b6e73e96a74da3b4dbe14683ab8784bf, type: 3}
+  - {fileID: 4800000, guid: 345e7f5af6eb60540b3870880ebcbc86, type: 3}
   - {fileID: 4800000, guid: b81e2909f31f3824da093643f5aebf4d, type: 3}
   - {fileID: 4800000, guid: 133e64d15d71024438fc4b81fbeef52a, type: 3}
   - {fileID: 4800000, guid: 0ba95868bc3d566418caf08681461d7c, type: 3}
@@ -21,4 +23,20 @@ MonoBehaviour:
   - {fileID: 4800000, guid: 0cff9b2b3d60a1b4eb01b5a0ed793a1b, type: 3}
   - {fileID: 4800000, guid: 5435533139e51784ea527e8305fdc286, type: 3}
   - {fileID: 4800000, guid: 84c189fb76ac25244b656b3dbc373232, type: 3}
+  - {fileID: 4800000, guid: 6890f7f77316b774f88049607192b1f6, type: 3}
+  - {fileID: 4800000, guid: 6b754b50586b1e14b9b5ada4e2b09374, type: 3}
+  - {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  - {fileID: 4800000, guid: cdf8c076cd18c224ab4e988bfb22b29e, type: 3}
+  - {fileID: 4800000, guid: fad3a5643793ced4bb1cc0524aa42df0, type: 3}
+  - {fileID: 4800000, guid: 4a477dc157c08154b882d11a469eb565, type: 3}
+  - {fileID: 4800000, guid: 07d3b01da1cee32458648ca3b637d0bc, type: 3}
+  - {fileID: 4800000, guid: 1676420f8d3ac6a41896f3daacba27bd, type: 3}
+  - {fileID: 4800000, guid: 6533eee5260f5ff47a2746f0366ccfc5, type: 3}
+  - {fileID: 4800000, guid: 741da19291c331a42b591633a6efe985, type: 3}
+  - {fileID: 4800000, guid: 603162d36b0adec439254b096cc8ec34, type: 3}
+  - {fileID: 4800000, guid: 246c964d412fefb4bbab518724aec666, type: 3}
+  - {fileID: 4800000, guid: 1f2da2ddbad1a3640abd96c7300fba84, type: 3}
+  - {fileID: 4800000, guid: caf54cf800204de4189ac1c8ad4ae1ad, type: 3}
+  - {fileID: 4800000, guid: 600f359dc9c41ea409808f51106d6c69, type: 3}
+  - {fileID: 4800000, guid: 1717ef889dcdec64899f905b06078d1e, type: 3}
   additionalPaths: []
