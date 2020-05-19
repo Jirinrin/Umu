@@ -38,6 +38,30 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background-Far
+    uniqueID: 929871747
+    locked: 0
+  - name: Background-Medium
+    uniqueID: 3168948557
+    locked: 0
+  - name: Background-Close
+    uniqueID: 2833660461
+    locked: 0
+  - name: Player
+    uniqueID: 880460631
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Default-Ground
+    uniqueID: 21286627
+    locked: 0
+  - name: Default-Foreground
+    uniqueID: 3951909079
+    locked: 0
+  - name: Foreground-Close
+    uniqueID: 1243938019
+    locked: 0
+  - name: Foreground
+    uniqueID: 2407480337
     locked: 0
