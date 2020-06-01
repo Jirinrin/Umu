@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof (CircleCollider2D))]
 public class CustomPlatformerCharacter2D : MonoBehaviour
 {
     [SerializeField] private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
@@ -17,6 +18,12 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
     private Animator m_Anim;            // Reference to the player's animator component.
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+    private Collider2D m_FootCollider;
+    
+    private static readonly int Ground = Animator.StringToHash("Ground");
+    private static readonly int VSpeed = Animator.StringToHash("vSpeed");
+    private static readonly int Crouch = Animator.StringToHash("Crouch");
+    private static readonly int Speed = Animator.StringToHash("Speed");
 
     private void Awake()
     {
@@ -25,54 +32,42 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
         m_CeilingCheck = transform.Find("CeilingCheck");
         m_Anim = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        m_FootCollider = GetComponent<CircleCollider2D>();
     }
 
 
     private void FixedUpdate()
     {
-        m_Grounded = false;
-        
-        // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-        // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-        var colliders = new Collider2D[3];
-        var size = Physics2D.OverlapCircleNonAlloc(m_GroundCheck.position, k_GroundedRadius, colliders, m_WhatIsGround);
-        // Debug.Log(colliders.Length);
-        // m_Rigidbody2D.colli
-        foreach (var c in colliders)
-        {
-            if (c?.gameObject != gameObject)
-                m_Grounded = true;
-        }
-        m_Anim.SetBool("Ground", m_Grounded);
+        m_Grounded = Physics2D.IsTouchingLayers(m_FootCollider, m_WhatIsGround)&& m_Rigidbody2D.velocity.y <= 0;
+
+        m_Anim.SetBool(Ground, m_Grounded);
 
         // Set the vertical animation
-        m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+        m_Anim.SetFloat(VSpeed, m_Rigidbody2D.velocity.y);
     }
 
 
     public void Move(float move, bool crouch, bool jump)
     {
         // If crouching, check to see if the character can stand up
-        if (!crouch && m_Anim.GetBool("Crouch"))
+        if (!crouch && m_Anim.GetBool(Crouch))
         {
             // If the character has a ceiling preventing them from standing up, keep them crouching
             if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
-            {
                 crouch = true;
-            }
         }
 
         // Set whether or not the character is crouching in the animator
-        m_Anim.SetBool("Crouch", crouch);
+        m_Anim.SetBool(Crouch, crouch);
 
         //only control the player if grounded or airControl is turned on
         if (m_Grounded || m_AirControl)
         {
             // Reduce the speed if crouching by the crouchSpeed multiplier
-            move = (crouch ? move*m_CrouchSpeed : move);
+            move = crouch ? move*m_CrouchSpeed : move;
 
             // The Speed animator parameter is set to the absolute value of the horizontal input.
-            m_Anim.SetFloat("Speed", Mathf.Abs(move));
+            m_Anim.SetFloat(Speed, Mathf.Abs(move));
 
             // Move the character
             m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
@@ -91,11 +86,11 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
             }
         }
         // If the player should jump...
-        if (m_Grounded && jump && m_Anim.GetBool("Ground"))
+        if (m_Grounded && jump && m_Anim.GetBool(Ground) )
         {
             // Add a vertical force to the player.
             m_Grounded = false;
-            m_Anim.SetBool("Ground", false);
+            m_Anim.SetBool(Ground, false);
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         }
     }
