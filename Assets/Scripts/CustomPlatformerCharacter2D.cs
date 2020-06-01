@@ -19,6 +19,7 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Collider2D m_FootCollider;
+    private bool m_Jumping = false;
     
     private static readonly int Ground = Animator.StringToHash("Ground");
     private static readonly int VSpeed = Animator.StringToHash("vSpeed");
@@ -38,7 +39,10 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
 
     private void FixedUpdate()
     {
-        m_Grounded = Physics2D.IsTouchingLayers(m_FootCollider, m_WhatIsGround)&& m_Rigidbody2D.velocity.y <= 0;
+        if (m_Jumping && m_Rigidbody2D.velocity.y <= 0)
+            m_Jumping = false;
+        
+        m_Grounded = Physics2D.IsTouchingLayers(m_FootCollider, m_WhatIsGround) && !m_Jumping;
 
         m_Anim.SetBool(Ground, m_Grounded);
 
@@ -86,9 +90,10 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
             }
         }
         // If the player should jump...
-        if (m_Grounded && jump && m_Anim.GetBool(Ground) )
+        if (m_Grounded && jump && m_Anim.GetBool(Ground))
         {
             // Add a vertical force to the player.
+            m_Jumping = true;
             m_Grounded = false;
             m_Anim.SetBool(Ground, false);
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
