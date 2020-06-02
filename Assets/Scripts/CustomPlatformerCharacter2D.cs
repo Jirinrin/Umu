@@ -19,7 +19,9 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Collider2D m_FootCollider;
-    private bool m_Jumping = false;
+    private bool _jumping;
+    private bool _launching;
+    private float _moveVelocity = 0f;
     
     private static readonly int Ground = Animator.StringToHash("Ground");
     private static readonly int VSpeed = Animator.StringToHash("vSpeed");
@@ -39,15 +41,67 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (m_Jumping && m_Rigidbody2D.velocity.y <= 0)
-            m_Jumping = false;
+        if (_jumping && m_Rigidbody2D.velocity.y <= 0)
+            _jumping = false;
         
-        m_Grounded = Physics2D.IsTouchingLayers(m_FootCollider, m_WhatIsGround) && !m_Jumping;
+        m_Grounded = Physics2D.IsTouchingLayers(m_FootCollider, m_WhatIsGround) && !_jumping;
 
         m_Anim.SetBool(Ground, m_Grounded);
 
+        var velocity = m_Rigidbody2D.velocity;
+        
         // Set the vertical animation
-        m_Anim.SetFloat(VSpeed, m_Rigidbody2D.velocity.y);
+        m_Anim.SetFloat(VSpeed, velocity.y);
+        
+        // Move the character
+        // if (move > 0f && velocity.x < 0f || move < 0f && velocity.x > 0f)
+        // {
+        //     velocity.x += move;
+        // }
+        // else
+        // {
+        //     velocity.x = velocity.x - _moveVelocity + move;
+        //     _moveVelocity = move;
+        // }
+        // m_Rigidbody2D.AddForce(new Vector2(move*10, 0f));
+
+        if (_launching && Math.Abs(_moveVelocity) > 0.01f)
+        {
+            if (velocity.y >= 0f)
+            {
+                velocity *= 0.9f; // todo: * modifier
+                if (velocity.y < 0.1f)
+                    _launching = false;
+                else
+                    m_Rigidbody2D.velocity = velocity;
+            }
+            else
+                _launching = false;
+        }
+
+        if (!_launching)
+        {
+            velocity.x = _moveVelocity;
+            m_Rigidbody2D.velocity = velocity;
+        }
+        
+        if (velocity.x > 0 && !m_FacingRight)
+            Flip();
+        else if (velocity.x < 0 && m_FacingRight)
+            Flip();
+
+        // m_Rigidbody2D.velocity = Vector2.zero;
+
+        // var position = m_Rigidbody2D.position;
+        // position.y += velocity.y*Time.fixedDeltaTime;
+        // position.x += velocity.x*Time.fixedDeltaTime;
+        // position.x += velocity.x*Time.fixedDeltaTime;
+        // m_Rigidbody2D.MovePosition(position);
+        
+        // m_Rigidbody2D.cal
+        
+        // m_Rigidbody2D.MovePosition(m_Rigidbody2D.position + m_Rigidbody2D.velocity * (Time.fixedDeltaTime * 100f));
+        // m_Rigidbody2D.MovePosition(m_Rigidbody2D.position + new Vector2(.1f,.1f));
     }
 
 
@@ -68,38 +122,32 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
         if (m_Grounded || m_AirControl)
         {
             // Reduce the speed if crouching by the crouchSpeed multiplier
-            move = crouch ? move*m_CrouchSpeed : move;
+            move *= (crouch ? m_CrouchSpeed : 1) * m_MaxSpeed;
 
             // The Speed animator parameter is set to the absolute value of the horizontal input.
             m_Anim.SetFloat(Speed, Mathf.Abs(move));
 
-            // Move the character
-            m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
-
-            // If the input is moving the player right and the player is facing left...
-            if (move > 0 && !m_FacingRight)
-            {
-                // ... flip the player.
-                Flip();
-            }
-            // Otherwise if the input is moving the player left and the player is facing right...
-            else if (move < 0 && m_FacingRight)
-            {
-                // ... flip the player.
-                Flip();
-            }
+            _moveVelocity = move;
         }
         // If the player should jump...
         if (m_Grounded && jump && m_Anim.GetBool(Ground))
         {
             // Add a vertical force to the player.
-            m_Jumping = true;
+            _jumping = true;
             m_Grounded = false;
             m_Anim.SetBool(Ground, false);
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         }
     }
-
+    
+    public void Launch(Vector2 direction)
+    {
+        m_Grounded = false;
+        _jumping = true;
+        _launching = true;
+        m_Anim.SetBool(Ground, false);
+        m_Rigidbody2D.AddForce(direction);
+    }
 
     private void Flip()
     {

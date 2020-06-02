@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityStandardAssets.CrossPlatformInput;
@@ -6,17 +7,19 @@ using UnityStandardAssets.CrossPlatformInput;
 [RequireComponent(typeof (CustomPlatformerCharacter2D))]
 public class CustomPlatformer2DUserControl : MonoBehaviour
 {
-    private CustomPlatformerCharacter2D m_Character;
-    private bool m_Jumping;
-    private Vector2? m_Moving;
-
+    [SerializeField] private RainSystem rainSystem;
+    
+    private CustomPlatformerCharacter2D _character;
+    private bool _jumping;
+    private Vector2? _moving;
+    
+    
 
     private void Awake()
     {
-        m_Character = GetComponent<CustomPlatformerCharacter2D>();
+        _character = GetComponent<CustomPlatformerCharacter2D>();
     }
-
-
+    
     // private void Update()
     // {
     //     if (!m_Jump)
@@ -32,25 +35,40 @@ public class CustomPlatformer2DUserControl : MonoBehaviour
         // bool crouch = Input.GetKey(KeyCode.LeftControl);
         // float h = CrossPlatformInputManager.GetAxis("Horizontal");
         // if (m_Moving.HasValue)
-        m_Character.Move(m_Moving?.x ?? 0, false, m_Jumping);
+        _character.Move(_moving?.x ?? 0, false, _jumping);
         // m_Character.Move(-1, false, false);
     }
 
     public void Move(InputAction.CallbackContext ctx)
     {
         if (ctx.canceled)
-            m_Moving = null;
+            _moving = null;
         else
-            m_Moving = ctx.ReadValue<Vector2>();
+            _moving = ctx.ReadValue<Vector2>();
     }
     
     public void Jump(InputAction.CallbackContext ctx)
     {
-        m_Jumping = !ctx.canceled;
-        // Debug.Log("Jumppppp");
-        // Debug.Log(ctx.phase);
-        // Debug.Log(ctx.ReadValue<>());
+        _jumping = !ctx.canceled;
+    }
+    
+    public void Launch(InputAction.CallbackContext ctx)
+    {
+        if (!ctx.performed) return;
+        
+        Debug.Log("launch");
+        
+        // rainSystem.ReverseRain(true);
+        // StartCoroutine(ChangeBackRain(2f));
 
-        // ctx.
+        var rot = rainSystem.rainRotation + Mathf.PI*.5f;
+        _character.Launch(new Vector2(1400, 1400) * new Vector2(Mathf.Cos(rot), Mathf.Sin(rot)));
+    }
+
+    private IEnumerator ChangeBackRain(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        
+        rainSystem.ReverseRain(false);
     }
 }
