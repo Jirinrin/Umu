@@ -2,7 +2,6 @@
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using DG.Tweening.Core;
 
 [RequireComponent(typeof(ParticleSystem))]
 [RequireComponent(typeof(ReverseParticleSystemSimple))]
@@ -57,6 +56,7 @@ public class RainSystem : MonoBehaviour
         var rawRotation = Mathf.Atan2(value.y, value.x);
         var newRotation = (rawRotation + Mathf.PI*3/2) % (2*Mathf.PI) - Mathf.PI;
         var clampedRotation = Mathf.Clamp(newRotation, -maxRainAngle, maxRainAngle);
+        // todo: do this at a constant speed instead of always e.g. 1s
         DOTween.To(() => rainRotation, v => rainRotation = v, clampedRotation, rainChangeDuration);
     }
 

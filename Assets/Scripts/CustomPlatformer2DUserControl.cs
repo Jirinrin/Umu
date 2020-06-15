@@ -58,8 +58,8 @@ public class CustomPlatformer2DUserControl : MonoBehaviour
         
         Debug.Log("launch");
         
-        // rainSystem.ReverseRain(true);
-        // StartCoroutine(ChangeBackRain(2f));
+        rainSystem.ReverseRain(true);
+        StartCoroutine(ChangeBackRain(1f));
 
         var rot = rainSystem.rainRotation + Mathf.PI*.5f;
         _character.Launch(new Vector2(1400, 1400) * new Vector2(Mathf.Cos(rot), Mathf.Sin(rot)));
