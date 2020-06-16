@@ -2,55 +2,56 @@
 
 public class ReverseParticleSystemSimple : MonoBehaviour
 {
-    ParticleSystem particleSystem;
+    private ParticleSystem _particleSystem;
 
-    private float simulationTime;
+    private float _simulationTime;
 
-    private bool reverseActive;
+    private bool _reverseActive;
 
-    public float simulationSpeedScale = 1.0f;
+    // public float simulationSpeedScale = .1f;
+    public float simulationSpeedScale = .01f;
 
-    void OnEnable()
+    private void OnEnable()
     {
-        if (particleSystem == null)
+        if (_particleSystem == null)
         {
-            particleSystem = GetComponent<ParticleSystem>();
+            _particleSystem = GetComponent<ParticleSystem>();
         }
 
-        simulationTime = 0f;
+        _simulationTime = 0f;
     }
-    void Update()
+    private void Update()
     {
-        if (reverseActive)
+        if (_reverseActive)
         {
-            particleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
-            particleSystem.Play(true);
-            simulationTime -= Time.deltaTime * particleSystem.main.simulationSpeed * simulationSpeedScale;
-            particleSystem.Simulate(simulationTime, true, false, true);
-
-            if (simulationTime < 0f)
-                simulationTime = particleSystem.main.duration-.0001f;
+            // _particleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+            // _particleSystem.Play(true);
+            _simulationTime -= Time.deltaTime * _particleSystem.main.simulationSpeed * simulationSpeedScale;
+            _particleSystem.Simulate(_simulationTime, true, false, true);
+        
+            if (_simulationTime < 0f)
+                _simulationTime = _particleSystem.main.duration-.0001f;
         }
         else
-            simulationTime = particleSystem.time;
+            _simulationTime = _particleSystem.time;
     }
 
     public void StartReverse()
     {
-        if (reverseActive)
+        if (_reverseActive)
             return;
 
-        reverseActive = true;
+        _reverseActive = true;
     }
 
     public void StopReverse()
     {
-        if (!reverseActive)
+        if (!_reverseActive)
             return;
 
-        reverseActive = false;
+        _reverseActive = false;
         
-        particleSystem.Simulate(simulationTime, true, false, true);
-        particleSystem.Play(true);
+        _particleSystem.Simulate(_simulationTime, true, false, true);
+        _particleSystem.Play(true);
     }
 }
