@@ -8,8 +8,16 @@ using UnityEngine.InputSystem;
 public class RainSystem : MonoBehaviour
 {
     [SerializeField] private float rainChangeDuration = 1f;
-    [SerializeField] public float maxRainAngle = 1.57f;
-
+    [SerializeField] public float maxRainAngle = 1.45f;
+    [SerializeField] private float distanceToCamera = 45f;
+    [SerializeField] private ParticleSystem splashParticleSystem;
+    
+    private ParticleSystem _particleSystem;
+    private ParticleSystem.ShapeModule _psShape;
+    private ParticleSystem.ShapeModule _psSplashShape;
+    private ReverseParticleSystemSimple _reverseParticleSystem;
+    private Camera _camera;
+    
     private float _rainRotation;
     public float rainRotation
     {
@@ -17,23 +25,19 @@ public class RainSystem : MonoBehaviour
         private set
         {
             _rainRotation = value;
-            _psShape.rotation = new Vector3(0, 0, value*Mathf.Rad2Deg);
+            var newRotation = value * Mathf.Rad2Deg;
+            _psShape.rotation = new Vector3(0, 0, newRotation);
+            _psSplashShape.rotation = new Vector3(-90f-newRotation, 90f, -90f); 
         }
     }
-
-    private ParticleSystem _particleSystem;
-    private ParticleSystem.ShapeModule _psShape;
-    private ReverseParticleSystemSimple _reverseParticleSystem;
-    private Camera _camera;
-
-    private const float DistanceToCamera = 35f;
-
+    
     // Start is called before the first frame update
     private void Start()
     {
         _camera = Camera.main;
         _particleSystem = GetComponent<ParticleSystem>();
         _psShape = _particleSystem.shape;
+        _psSplashShape = splashParticleSystem.shape;
         _reverseParticleSystem = GetComponent<ReverseParticleSystemSimple>();
     }
 
@@ -41,8 +45,8 @@ public class RainSystem : MonoBehaviour
     {
         if (!_camera) return;
         var camPos = _camera.transform.position;
-        camPos.x += Mathf.Cos(rainRotation+Mathf.PI*0.5f ) * DistanceToCamera;
-        camPos.y += Mathf.Sin(rainRotation+Mathf.PI*0.5f ) * DistanceToCamera;
+        camPos.x += Mathf.Cos(rainRotation+Mathf.PI*0.5f ) * distanceToCamera;
+        camPos.y += Mathf.Sin(rainRotation+Mathf.PI*0.5f ) * distanceToCamera;
         camPos.z = transform.position.z;
         _psShape.position = camPos;
     }
