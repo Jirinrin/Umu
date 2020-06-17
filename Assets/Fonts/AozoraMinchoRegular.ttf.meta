@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2b649e9de5c99284c9a235b29254a7a3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Aozora Mincho
+  fontNames:
+  - Aozora Mincho
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 08ac805a71082d646bf08dc1620ea3b7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -26,11 +26,11 @@ public class ReverseParticleSystemSimple : MonoBehaviour
         {
             // _particleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
             // _particleSystem.Play(true);
-            _simulationTime -= Time.deltaTime * _particleSystem.main.simulationSpeed * simulationSpeedScale;
-            _particleSystem.Simulate(_simulationTime, true, false, true);
-        
+            _simulationTime -= Time.deltaTime * simulationSpeedScale; // * _particleSystem.main.simulationSpeed
             if (_simulationTime < 0f)
                 _simulationTime = _particleSystem.main.duration-.0001f;
+            
+            _particleSystem.Simulate(_simulationTime, true, false, true);
         }
         else
             _simulationTime = _particleSystem.time;
