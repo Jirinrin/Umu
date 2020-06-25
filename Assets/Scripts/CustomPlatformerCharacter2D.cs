@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof (CircleCollider2D))]
+[RequireComponent(typeof (Collider2D))]
 public class CustomPlatformerCharacter2D : MonoBehaviour
 {
     [SerializeField] private float maxSpeed = 10f;                    // The fastest the player can travel in the x axis.
@@ -18,7 +18,7 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
     private Animator _anim;            // Reference to the player's animator component.
     private Rigidbody2D _rigidbody2D;
     private bool _facingRight = true;  // For determining which way the player is currently facing.
-    private Collider2D _footCollider;
+    private Collider2D _collider;
     private bool _jumping;
     private bool _launching;
     private float _moveVelocity = 0f;
@@ -35,7 +35,7 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
         _ceilingCheck = transform.Find("CeilingCheck");
         _anim = GetComponent<Animator>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _footCollider = GetComponent<CircleCollider2D>();
+        _collider = GetComponent<Collider2D>();
     }
 
 
@@ -44,7 +44,7 @@ public class CustomPlatformerCharacter2D : MonoBehaviour
         if (_jumping && _rigidbody2D.velocity.y <= 0)
             _jumping = false;
         
-        _grounded = Physics2D.IsTouchingLayers(_footCollider, whatIsGround) && !_jumping;
+        _grounded = Physics2D.IsTouchingLayers(_collider, whatIsGround) && !_jumping;
 
         _anim.SetBool(Ground, _grounded);
 

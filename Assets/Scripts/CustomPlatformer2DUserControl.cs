@@ -8,13 +8,15 @@ using UnityStandardAssets.CrossPlatformInput;
 public class CustomPlatformer2DUserControl : MonoBehaviour
 {
     [SerializeField] private RainSystem rainSystem;
+    [SerializeField] private LayerMask whatIsInteractable;
+
+    // This will be set/unset by interactables when the player enters/exits their trigger collider
+    [NonSerialized] public Npc Interactable;
     
     private CustomPlatformerCharacter2D _character;
     private bool _jumping;
     private Vector2? _moving;
     
-    
-
     private void Awake()
     {
         _character = GetComponent<CustomPlatformerCharacter2D>();
@@ -52,11 +54,15 @@ public class CustomPlatformer2DUserControl : MonoBehaviour
         _jumping = !ctx.canceled;
     }
     
+    public void Confirm(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && Interactable)
+            Interactable.Confirm();
+    }
+    
     public void Launch(InputAction.CallbackContext ctx)
     {
         if (!ctx.performed) return;
-        
-        Debug.Log("launch");
         
         rainSystem.ReverseRain(true);
         StartCoroutine(ChangeBackRain(1f));
