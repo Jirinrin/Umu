@@ -8,7 +8,6 @@ using UnityStandardAssets.CrossPlatformInput;
 public class CustomPlatformer2DUserControl : MonoBehaviour
 {
     [SerializeField] private RainSystem rainSystem;
-    [SerializeField] private LayerMask whatIsInteractable;
 
     // This will be set/unset by interactables when the player enters/exits their trigger collider
     [NonSerialized] public Npc Interactable;
@@ -21,15 +20,6 @@ public class CustomPlatformer2DUserControl : MonoBehaviour
     {
         _character = GetComponent<CustomPlatformerCharacter2D>();
     }
-    
-    // private void Update()
-    // {
-    //     if (!m_Jump)
-    //     {
-    //         // Read the jump input in Update so button presses aren't missed.
-    //         // m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-    //     }
-    // }
 
     private void FixedUpdate()
     {

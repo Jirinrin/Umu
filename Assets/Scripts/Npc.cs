@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 // todo: make generic Interactable class which this inherits some stuff from
@@ -8,22 +9,33 @@ using UnityEngine;
 public class Npc : MonoBehaviour
 {
     [SerializeField] private List<string> lines;
+
+    [SerializeField] private Vector3 textBoxPosition = new Vector3(0, 3f, 0);
     
     private List<string>.Enumerator _line;
-    private CustomPlatformer2DUserControl _player;
 
     private Collider2D _collider;
+
+    private SpriteRenderer _textBox;
+    private TextMeshPro _textBoxText;
 
     private void OnEnable()
     {
         _line = lines.GetEnumerator();
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<CustomPlatformer2DUserControl>();
 
         _collider = GetComponentInChildren<Collider2D>();
         if (!_collider)
             _collider = gameObject.AddComponent<CircleCollider2D>();
-        // todo: make this more robust lol
         _collider.isTrigger = true;
+
+        var textBoxPrefab = Resources.Load("Prefabs/TextBox") as GameObject;
+        
+        var textBox = Instantiate(textBoxPrefab, transform);
+        textBox.transform.localPosition = textBoxPosition;
+        _textBox = textBox.GetComponent<SpriteRenderer>();
+        _textBoxText = textBox.GetComponentInChildren<TextMeshPro>();
+        _textBox.color = Color.clear;
+        _textBoxText.text = null;
     }
 
     public void Confirm()
@@ -31,40 +43,26 @@ public class Npc : MonoBehaviour
         if (!_line.MoveNext())
             _line = lines.GetEnumerator();
         
+        _textBox.color = Color.white;
         DisplayLine(_line.Current);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player"))
-            return;
-        
-        ShowBtnHint();
-        _player.Interactable = this;
-    }
-    
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player"))
-            return;
-        
-        HideBtnHint();
-        _player.Interactable = null;
-    }
-    
-    private void ShowBtnHint()
+    public void HoverEnter()
     {
         Debug.Log("show help");
     }
     
-    private void HideBtnHint()
+    public void HoverExit()
     {
         Debug.Log("hide help");
     }
 
-    private static void DisplayLine(string line)
+    private void DisplayLine(string line)
     {
         Debug.Log("display line:");
         Debug.Log(line);
+        _textBoxText.text = line;
+        if (line == null)
+            _textBox.color = Color.clear;
     }
 }
