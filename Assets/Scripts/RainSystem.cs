@@ -17,7 +17,6 @@ public class RainSystem : MonoBehaviour
     private ParticleSystem.ShapeModule _psSplashShape;
     private ReverseParticleSystemSimple _reverseParticleSystem;
     private Camera _camera;
-    public bool DoReverseRain { set; get; } = true;
     
     private float _rainRotation;
     public float rainRotation
@@ -67,9 +66,6 @@ public class RainSystem : MonoBehaviour
 
     public void ReverseRain(bool reversedDirection)
     {
-        if (!DoReverseRain)
-            return;
-        
         if (reversedDirection)
            _reverseParticleSystem.StartReverse();
         else
