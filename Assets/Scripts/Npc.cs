@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 // todo: make generic Interactable class which this inherits some stuff from
 // [RequireComponent(typeof(CircleCollider2D))]
@@ -19,6 +20,18 @@ public class Npc : MonoBehaviour
     private SpriteRenderer _textBox;
     private TextMeshPro _textBoxText;
 
+    private void FadeIn()
+    {
+        _textBox.DOColor(C.ColorAlpha1, .5f);
+        _textBoxText.DOColor(Color.black, .5f);
+    }
+
+    private void FadeOut()
+    {
+        _textBox.DOColor(C.ColorAlpha0, .5f);
+        _textBoxText.DOColor(Color.clear, .5f);
+    }
+
     private void OnEnable()
     {
         _line = lines.GetEnumerator();
@@ -34,7 +47,7 @@ public class Npc : MonoBehaviour
         textBox.transform.localPosition = textBoxPosition;
         _textBox = textBox.GetComponent<SpriteRenderer>();
         _textBoxText = textBox.GetComponentInChildren<TextMeshPro>();
-        _textBox.color = Color.clear;
+        _textBox.color = C.ColorAlpha0;
         _textBoxText.text = null;
     }
 
@@ -43,18 +56,20 @@ public class Npc : MonoBehaviour
         if (!_line.MoveNext())
             _line = lines.GetEnumerator();
         
-        _textBox.color = Color.white;
+        FadeIn();
+
         DisplayLine(_line.Current);
     }
 
-    public void HoverEnter()
+    public void FocusEnter()
     {
-        Debug.Log("show help");
+        if (_line.Current != null)
+            FadeIn();
     }
     
-    public void HoverExit()
+    public void FocusExit()
     {
-        Debug.Log("hide help");
+        FadeOut();
     }
 
     private void DisplayLine(string line)
@@ -63,6 +78,6 @@ public class Npc : MonoBehaviour
         Debug.Log(line);
         _textBoxText.text = line;
         if (line == null)
-            _textBox.color = Color.clear;
+            FadeOut();
     }
 }
