@@ -59,6 +59,7 @@ public class RainSystem : MonoBehaviour
         var value = ctx.ReadValue<Vector2>();
         var rawRotation = Mathf.Atan2(value.y, value.x);
         var newRotation = (rawRotation + Mathf.PI*3/2) % (2*Mathf.PI) - Mathf.PI;
+//        Debug.Log(newRotation);
         var clampedRotation = Mathf.Clamp(newRotation, -maxRainAngle, maxRainAngle);
         // todo: do this at a constant speed instead of always e.g. 1s
         DOTween.To(() => rainRotation, v => rainRotation = v, clampedRotation, rainChangeDuration);
