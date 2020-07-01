@@ -53,7 +53,7 @@ public class ReverseParticleSystemSimple : MonoBehaviour
         _reverseActive = true;
         
         if (fakeReverse)
-            _particleSystemMain.simulationSpeed = 40f;
+            _particleSystemMain.simulationSpeed = 20f;
     }
 
     public void StopReverse()
