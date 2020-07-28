@@ -87,7 +87,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: platforms
+  - name: platf
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -95,10 +95,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 512
-      width: 418
+      y: 909
+      width: 397
       height: 62
-    spriteID: 6e1508ad0699f104ea012fb7902fe565
+    spriteID: 850b3a0cc734c264a838aa59796ddb0a
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,8 +108,30 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -56, y: 58}
-  - name: constructies enzo
+    uvTransform: {x: -48, y: 463}
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 461
+      width: 295
+      height: 440
+    spriteID: ab062b98254c11944883dcc0ba8175b3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -14, y: 420}
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -118,9 +140,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 399
-      height: 500
-    spriteID: 9786f920200445343bc56d63279a21ca
+      width: 299
+      height: 449
+    spriteID: ad7ed1db814f7604386cbe981a9ac6d2
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -130,7 +152,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -20, y: -14}
+    uvTransform: {x: -101, y: -34}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -150,19 +172,26 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: platforms
-    spriteName: platforms
+  - name: platf
+    spriteName: platf
     isGroup: 0
     parentIndex: -1
-    spriteID: 6e1508ad0699f104ea012fb7902fe565
-    layerID: 19
-    mosaicPosition: {x: 4, y: 512}
-  - name: constructies enzo
-    spriteName: constructies enzo
+    spriteID: 850b3a0cc734c264a838aa59796ddb0a
+    layerID: 6
+    mosaicPosition: {x: 4, y: 909}
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC8"
     isGroup: 0
     parentIndex: -1
-    spriteID: 9786f920200445343bc56d63279a21ca
-    layerID: 20
+    spriteID: ab062b98254c11944883dcc0ba8175b3
+    layerID: 8
+    mosaicPosition: {x: 4, y: 461}
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC7"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad7ed1db814f7604386cbe981a9ac6d2
+    layerID: 7
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []

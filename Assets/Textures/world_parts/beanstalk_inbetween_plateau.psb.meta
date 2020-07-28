@@ -87,7 +87,29 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: constructies enzo
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 938
+      width: 520
+      height: 164
+    spriteID: 819c058ac21cfc04389094fcd7e8ec84
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -160, y: 540}
+  - name: "\u30EC\u30A4\u30E4\u30FC9"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -96,9 +118,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 582
-      height: 503
-    spriteID: 28e05f63431b2f74db28469bf8974710
+      width: 520
+      height: 466
+    spriteID: 5e52b39ca1eb0ea4fae8e55cabf7405d
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,19 +130,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -140, y: -63}
-  - name: platforms
+    uvTransform: {x: -128, y: -50}
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 594
-      y: 4
-      width: 0
-      height: 0
-    spriteID: de848d51ed1d93946b53d5f233418477
+      x: 4
+      y: 478
+      width: 523
+      height: 452
+    spriteID: 55813d265ec87b344a2e0477dc658d9e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -130,47 +152,54 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -321, y: -729}
+    uvTransform: {x: -219, y: 452}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 1024
-  importedTextureHeight: 512
+  importedTextureHeight: 2048
   documentSize: {x: 915, y: 733}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
   textureActualWidth: 1024
-  textureActualHeight: 512
+  textureActualHeight: 2048
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC7"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 819c058ac21cfc04389094fcd7e8ec84
+    layerID: 8
+    mosaicPosition: {x: 4, y: 938}
+  - name: "\u30EC\u30A4\u30E4\u30FC9"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC9"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5e52b39ca1eb0ea4fae8e55cabf7405d
+    layerID: 7
+    mosaicPosition: {x: 4, y: 4}
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC8"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 55813d265ec87b344a2e0477dc658d9e
+    layerID: 6
+    mosaicPosition: {x: 4, y: 478}
   - name: rough
     spriteName: 
     isGroup: 1
     parentIndex: -1
     spriteID: 00000000000000000000000000000000
-    layerID: 21
+    layerID: 9
     mosaicPosition: {x: 0, y: 0}
-  - name: constructies enzo
-    spriteName: constructies enzo
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 28e05f63431b2f74db28469bf8974710
-    layerID: 20
-    mosaicPosition: {x: 4, y: 4}
-  - name: platforms
-    spriteName: platforms
-    isGroup: 0
-    parentIndex: 0
-    spriteID: de848d51ed1d93946b53d5f233418477
-    layerID: 19
-    mosaicPosition: {x: 594, y: 4}
   characterData:
     bones: []
     parts: []

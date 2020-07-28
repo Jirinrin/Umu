@@ -87,29 +87,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: platforms
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1269
-      y: 4248
-      width: 292
-      height: 44
-    spriteID: c51521748a2c72448bc59a0558524393
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 952, y: -676}
-  - name: geteken
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -118,9 +96,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1676
-      height: 4236
-    spriteID: 5b512ea40ae294e4886157f605fa806b
+      width: 1607
+      height: 4281
+    spriteID: c0a56a832c81228419b8782c17d5651b
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -130,7 +108,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -21, y: -1819}
+    uvTransform: {x: -63, y: -1765}
   - name: "\u30EC\u30A4\u30E4\u30FC7"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -139,10 +117,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4248
+      y: 4293
       width: 1257
-      height: 3935
-    spriteID: 4af4c4242abdfbd4b95b1a205b72772e
+      height: 3881
+    spriteID: 0845af3edd34cb44db34c13902c72669
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -152,54 +130,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -318, y: 4066}
-  platformSettings: []
+    uvTransform: {x: -318, y: 4111}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 1024
-  importedTextureHeight: 2048
+  importedTextureWidth: 2048
+  importedTextureHeight: 8192
   documentSize: {x: 1701, y: 6059}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 4096
+  textureActualWidth: 2048
   textureActualHeight: 8192
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: rough
-    spriteName: 
-    isGroup: 1
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC8"
+    isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 21
-    mosaicPosition: {x: 0, y: 0}
-  - name: platforms
-    spriteName: platforms
-    isGroup: 0
-    parentIndex: 0
-    spriteID: c51521748a2c72448bc59a0558524393
-    layerID: 19
-    mosaicPosition: {x: 1269, y: 4248}
-  - name: geteken
-    spriteName: geteken
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 5b512ea40ae294e4886157f605fa806b
-    layerID: 18
+    spriteID: c0a56a832c81228419b8782c17d5651b
+    layerID: 8
     mosaicPosition: {x: 4, y: 4}
   - name: "\u30EC\u30A4\u30E4\u30FC7"
     spriteName: "\u30EC\u30A4\u30E4\u30FC7"
     isGroup: 0
-    parentIndex: 0
-    spriteID: 4af4c4242abdfbd4b95b1a205b72772e
-    layerID: 57
-    mosaicPosition: {x: 4, y: 4248}
+    parentIndex: -1
+    spriteID: 0845af3edd34cb44db34c13902c72669
+    layerID: 4
+    mosaicPosition: {x: 4, y: 4293}
   characterData:
     bones: []
     parts: []

@@ -87,7 +87,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: tanden
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -96,9 +96,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1590
-      height: 3422
-    spriteID: 2854906e91dc09442ab393d052fe475d
+      width: 1584
+      height: 3465
+    spriteID: 7d6a9b6937418114bbecd8fcb07d58a4
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,14 +108,25 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -160, y: -195}
-  platformSettings: []
+    uvTransform: {x: -166, y: -184}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 1024
-  importedTextureHeight: 2048
+  importedTextureWidth: 2048
+  importedTextureHeight: 4096
   documentSize: {x: 1754, y: 3844}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
@@ -128,19 +139,12 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: rough
-    spriteName: 
-    isGroup: 1
-    parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 21
-    mosaicPosition: {x: 0, y: 0}
-  - name: tanden
-    spriteName: tanden
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC7"
     isGroup: 0
-    parentIndex: 0
-    spriteID: 2854906e91dc09442ab393d052fe475d
-    layerID: 17
+    parentIndex: -1
+    spriteID: 7d6a9b6937418114bbecd8fcb07d58a4
+    layerID: 6
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []

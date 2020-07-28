@@ -87,18 +87,18 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: constructies enzo
+  - name: apple
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3391
-      width: 3965
-      height: 2234
-    spriteID: 1c291e604ce019f4b8f2605a97c27726
+      x: 2790
+      y: 5496
+      width: 335
+      height: 372
+    spriteID: e26017a8cfc7a944fab4c75dffcd5f93
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,8 +108,74 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -399, y: 2798}
-  - name: geteken
+    uvTransform: {x: 1920, y: 4750}
+  - name: water
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7734
+      width: 897
+      height: 187
+    spriteID: e94f5b0d3d9af9d44a3e07224ffd92cc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -586, y: 7115}
+  - name: platforms
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3280
+      width: 3054
+      height: 2208
+    spriteID: bcc933906147ddd4591220d3481a6381
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -416, y: 2685}
+  - name: platform constr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5496
+      width: 2778
+      height: 2230
+    spriteID: d3f990a9a7e3e2b488e481a49f18d4e4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -443, y: 4940}
+  - name: leavews
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -118,9 +184,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 4558
-      height: 3379
-    spriteID: 509af1d365aac214e839f5a42fb1ba6f
+      width: 3264
+      height: 3268
+    spriteID: bcaaf36b72cdf944d8103991d027cfb2
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -130,14 +196,69 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -142, y: -105}
-  platformSettings: []
+    uvTransform: {x: -129, y: -92}
+  - name: sidetwirl
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3276
+      y: 2304
+      width: 850
+      height: 1005
+    spriteID: fc30eeec929bf7b4899ebce9a7a81288
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2877, y: -155}
+  - name: main
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3276
+      y: 4
+      width: 4441
+      height: 2292
+    spriteID: 535523bd9f014db41b069850bdb5f19a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3063, y: -472}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 2048
-  importedTextureHeight: 2048
+  importedTextureWidth: 8192
+  importedTextureHeight: 8192
   documentSize: {x: 4704, y: 3709}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
@@ -150,27 +271,55 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: rough
-    spriteName: 
-    isGroup: 1
+  - name: apple
+    spriteName: apple
+    isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 21
-    mosaicPosition: {x: 0, y: 0}
-  - name: constructies enzo
-    spriteName: constructies enzo
+    spriteID: e26017a8cfc7a944fab4c75dffcd5f93
+    layerID: 9
+    mosaicPosition: {x: 2790, y: 5496}
+  - name: water
+    spriteName: water
     isGroup: 0
-    parentIndex: 0
-    spriteID: 1c291e604ce019f4b8f2605a97c27726
-    layerID: 55
-    mosaicPosition: {x: 4, y: 3391}
-  - name: geteken
-    spriteName: geteken
+    parentIndex: -1
+    spriteID: e94f5b0d3d9af9d44a3e07224ffd92cc
+    layerID: 20
+    mosaicPosition: {x: 4, y: 7734}
+  - name: platforms
+    spriteName: platforms
     isGroup: 0
-    parentIndex: 0
-    spriteID: 509af1d365aac214e839f5a42fb1ba6f
-    layerID: 18
+    parentIndex: -1
+    spriteID: bcc933906147ddd4591220d3481a6381
+    layerID: 14
+    mosaicPosition: {x: 4, y: 3280}
+  - name: platform constr
+    spriteName: platform constr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d3f990a9a7e3e2b488e481a49f18d4e4
+    layerID: 16
+    mosaicPosition: {x: 4, y: 5496}
+  - name: leavews
+    spriteName: leavews
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bcaaf36b72cdf944d8103991d027cfb2
+    layerID: 13
     mosaicPosition: {x: 4, y: 4}
+  - name: sidetwirl
+    spriteName: sidetwirl
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fc30eeec929bf7b4899ebce9a7a81288
+    layerID: 8
+    mosaicPosition: {x: 3276, y: 2304}
+  - name: main
+    spriteName: main
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 535523bd9f014db41b069850bdb5f19a
+    layerID: 7
+    mosaicPosition: {x: 3276, y: 4}
   characterData:
     bones: []
     parts: []

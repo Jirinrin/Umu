@@ -87,18 +87,18 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: constructies enzo
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1767
-      width: 2455
-      height: 228
-    spriteID: 1c4c94c233ed77c44bc9d655459433b5
+      x: 1534
+      y: 1507
+      width: 2519
+      height: 113
+    spriteID: 5f914342088647e4a9968507b473544d
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,8 +108,74 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -214, y: 386}
-  - name: geteken
+    uvTransform: {x: 1315, y: 14}
+  - name: "\u30EC\u30A4\u30E4\u30FC9"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1725
+      width: 1482
+      height: 189
+    spriteID: d2daa0cd4c604ce4f9663754424e1d0f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -866, y: 322}
+  - name: "\u30EC\u30A4\u30E4\u30FC11"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1507
+      width: 1522
+      height: 210
+    spriteID: 5958b874358320a4db0237ac21a00ce0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -835, y: 121}
+  - name: "\u30EC\u30A4\u30E4\u30FC10"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1494
+      y: 1725
+      width: 898
+      height: 176
+    spriteID: 895745ceb4c83b14b90b8e2c7ef8a1e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 808, y: 321}
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -118,9 +184,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 3549
-      height: 1755
-    spriteID: 74ca2430d3c8db942a41d72785a0623b
+      width: 3498
+      height: 1495
+    spriteID: fd9308a9cb8064f49b555307c4b4b0d0
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -130,14 +196,25 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1500, y: -37}
-  platformSettings: []
+    uvTransform: {x: -1497, y: -41}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 2048
-  importedTextureHeight: 1024
+  importedTextureWidth: 4096
+  importedTextureHeight: 2048
   documentSize: {x: 5053, y: 1796}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
@@ -150,26 +227,40 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: rough
-    spriteName: 
-    isGroup: 1
+  - name: "\u30EC\u30A4\u30E4\u30FC8"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC8"
+    isGroup: 0
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 21
-    mosaicPosition: {x: 0, y: 0}
-  - name: constructies enzo
-    spriteName: constructies enzo
+    spriteID: 5f914342088647e4a9968507b473544d
+    layerID: 9
+    mosaicPosition: {x: 1534, y: 1507}
+  - name: "\u30EC\u30A4\u30E4\u30FC9"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC9"
     isGroup: 0
-    parentIndex: 0
-    spriteID: 1c4c94c233ed77c44bc9d655459433b5
-    layerID: 20
-    mosaicPosition: {x: 4, y: 1767}
-  - name: geteken
-    spriteName: geteken
+    parentIndex: -1
+    spriteID: d2daa0cd4c604ce4f9663754424e1d0f
+    layerID: 14
+    mosaicPosition: {x: 4, y: 1725}
+  - name: "\u30EC\u30A4\u30E4\u30FC11"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC11"
     isGroup: 0
-    parentIndex: 0
-    spriteID: 74ca2430d3c8db942a41d72785a0623b
-    layerID: 18
+    parentIndex: -1
+    spriteID: 5958b874358320a4db0237ac21a00ce0
+    layerID: 16
+    mosaicPosition: {x: 4, y: 1507}
+  - name: "\u30EC\u30A4\u30E4\u30FC10"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC10"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 895745ceb4c83b14b90b8e2c7ef8a1e3
+    layerID: 15
+    mosaicPosition: {x: 1494, y: 1725}
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC7"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fd9308a9cb8064f49b555307c4b4b0d0
+    layerID: 7
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []

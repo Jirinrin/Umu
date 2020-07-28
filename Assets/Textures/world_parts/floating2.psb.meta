@@ -87,7 +87,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: geteken
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -96,9 +96,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 628
-      height: 602
-    spriteID: bdf595ed32dee184980102d965e1be8e
+      width: 625
+      height: 567
+    spriteID: 27b916b3018c7ac4a8a5396f121c3234
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -108,7 +108,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -56, y: -30}
+    uvTransform: {x: -58, y: -42}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -128,12 +128,12 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: geteken
-    spriteName: geteken
+  - name: "\u30EC\u30A4\u30E4\u30FC7"
+    spriteName: "\u30EC\u30A4\u30E4\u30FC7"
     isGroup: 0
     parentIndex: -1
-    spriteID: bdf595ed32dee184980102d965e1be8e
-    layerID: 18
+    spriteID: 27b916b3018c7ac4a8a5396f121c3234
+    layerID: 5
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
