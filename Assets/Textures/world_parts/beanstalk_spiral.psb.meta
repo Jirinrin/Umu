@@ -98,7 +98,7 @@ ScriptedImporter:
       y: 5496
       width: 335
       height: 372
-    spriteID: e26017a8cfc7a944fab4c75dffcd5f93
+    spriteID: bcaaf36b72cdf944d8103991d027cfb2
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -109,28 +109,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1920, y: 4750}
-  - name: water
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 7734
-      width: 897
-      height: 187
-    spriteID: e94f5b0d3d9af9d44a3e07224ffd92cc
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -586, y: 7115}
   - name: platforms
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -142,7 +120,7 @@ ScriptedImporter:
       y: 3280
       width: 3054
       height: 2208
-    spriteID: bcc933906147ddd4591220d3481a6381
+    spriteID: 075208a1d7cf2004bba4bc80616a2fb8
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -153,7 +131,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -416, y: 2685}
-  - name: platform constr
+  - name: water
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -161,10 +139,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 5496
-      width: 2778
-      height: 2230
-    spriteID: d3f990a9a7e3e2b488e481a49f18d4e4
+      y: 7734
+      width: 897
+      height: 187
+    spriteID: e18a093b1b2423144a041277cbc8d89b
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -174,7 +152,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -443, y: 4940}
+    uvTransform: {x: -586, y: 7115}
   - name: leavews
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -186,7 +164,7 @@ ScriptedImporter:
       y: 4
       width: 3264
       height: 3268
-    spriteID: bcaaf36b72cdf944d8103991d027cfb2
+    spriteID: e26017a8cfc7a944fab4c75dffcd5f93
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -197,28 +175,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -129, y: -92}
-  - name: sidetwirl
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3276
-      y: 2304
-      width: 850
-      height: 1005
-    spriteID: fc30eeec929bf7b4899ebce9a7a81288
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2877, y: -155}
   - name: main
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -241,6 +197,50 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 3063, y: -472}
+  - name: platform constr
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5496
+      width: 2778
+      height: 2230
+    spriteID: f969c8a07631bb447a6578395a94b0ba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -443, y: 4940}
+  - name: sidetwirl
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3276
+      y: 2304
+      width: 850
+      height: 1005
+    spriteID: fc30eeec929bf7b4899ebce9a7a81288
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2877, y: -155}
   platformSettings:
   - name: Default
     overridden: 1
@@ -267,7 +267,7 @@ ScriptedImporter:
   textureActualWidth: 8192
   textureActualHeight: 8192
   spritePackingTag: 
-  resliceFromLayer: 0
+  resliceFromLayer: 1
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
@@ -275,44 +275,30 @@ ScriptedImporter:
     spriteName: apple
     isGroup: 0
     parentIndex: -1
-    spriteID: e26017a8cfc7a944fab4c75dffcd5f93
-    layerID: 9
+    spriteID: bcaaf36b72cdf944d8103991d027cfb2
+    layerID: 13
     mosaicPosition: {x: 2790, y: 5496}
-  - name: water
-    spriteName: water
-    isGroup: 0
-    parentIndex: -1
-    spriteID: e94f5b0d3d9af9d44a3e07224ffd92cc
-    layerID: 20
-    mosaicPosition: {x: 4, y: 7734}
   - name: platforms
     spriteName: platforms
     isGroup: 0
     parentIndex: -1
-    spriteID: bcc933906147ddd4591220d3481a6381
-    layerID: 14
+    spriteID: 075208a1d7cf2004bba4bc80616a2fb8
+    layerID: 11
     mosaicPosition: {x: 4, y: 3280}
-  - name: platform constr
-    spriteName: platform constr
+  - name: water
+    spriteName: water
     isGroup: 0
     parentIndex: -1
-    spriteID: d3f990a9a7e3e2b488e481a49f18d4e4
-    layerID: 16
-    mosaicPosition: {x: 4, y: 5496}
+    spriteID: e18a093b1b2423144a041277cbc8d89b
+    layerID: 12
+    mosaicPosition: {x: 4, y: 7734}
   - name: leavews
     spriteName: leavews
     isGroup: 0
     parentIndex: -1
-    spriteID: bcaaf36b72cdf944d8103991d027cfb2
-    layerID: 13
+    spriteID: e26017a8cfc7a944fab4c75dffcd5f93
+    layerID: 9
     mosaicPosition: {x: 4, y: 4}
-  - name: sidetwirl
-    spriteName: sidetwirl
-    isGroup: 0
-    parentIndex: -1
-    spriteID: fc30eeec929bf7b4899ebce9a7a81288
-    layerID: 8
-    mosaicPosition: {x: 3276, y: 2304}
   - name: main
     spriteName: main
     isGroup: 0
@@ -320,6 +306,20 @@ ScriptedImporter:
     spriteID: 535523bd9f014db41b069850bdb5f19a
     layerID: 7
     mosaicPosition: {x: 3276, y: 4}
+  - name: platform constr
+    spriteName: platform constr
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f969c8a07631bb447a6578395a94b0ba
+    layerID: 10
+    mosaicPosition: {x: 4, y: 5496}
+  - name: sidetwirl
+    spriteName: sidetwirl
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fc30eeec929bf7b4899ebce9a7a81288
+    layerID: 8
+    mosaicPosition: {x: 3276, y: 2304}
   characterData:
     bones: []
     parts: []

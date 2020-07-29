@@ -87,95 +87,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: "\u30EC\u30A4\u30E4\u30FC10"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2002
-      y: 3576
-      width: 0
-      height: 0
-    spriteID: 8e18af1c2964e0048b13290849088b6a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -839, y: 1504}
-  - name: "\u30EC\u30A4\u30E4\u30FC9"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2010
-      y: 3576
-      width: 0
-      height: 0
-    spriteID: 16c8ddb7d09398349bba931a177bb905
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -831, y: 1504}
-  - name: village platforms
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2690
-      y: 802
-      width: 1367
-      height: 819
-    spriteID: b7d360452099f6040acf45c8c3e8183a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2547, y: 106}
-  - name: village paltfrom constr
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1339
-      y: 802
-      width: 1343
-      height: 900
-    spriteID: dc835842782944243a042928a9e8d33e
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1188, y: 197}
-  - name: fruits
+  - name: platform constr
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -184,9 +96,31 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
+      width: 2581
+      height: 1505
+    spriteID: 6d012ad68bab21b449b8c6b85480c2da
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -139, y: -6}
+  - name: fruits
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2593
+      y: 4
       width: 1327
       height: 1084
-    spriteID: a7925bcae3c8ffd4898f56427e9bf76f
+    spriteID: b13ed79967389a649828baa1756de674
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -196,19 +130,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -168, y: -646}
-  - name: paths
+    uvTransform: {x: 2421, y: -646}
+  - name: fruit stales
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1339
-      y: 4
-      width: 1579
-      height: 790
-    spriteID: 10bb66fa40bc54b45adc77bb8b9e1052
+      x: 4
+      y: 1517
+      width: 1147
+      height: 1021
+    spriteID: 21045fc7cf0dbe745bdabf463ba3298f
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -218,51 +152,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1195, y: -693}
-  - name: platform
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1339
-      y: 3576
-      width: 655
-      height: 38
-    spriteID: 8791c23d69d4ed34fbf980c379d4be59
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -351, y: 2760}
-  - name: platform constr
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1339
-      y: 2739
-      width: 989
-      height: 829
-    spriteID: 050d085171d8a3246b41c39d4f882e1e
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -396, y: 2729}
+    uvTransform: {x: -311, y: 591}
   platformSettings:
   - name: Default
     overridden: 1
@@ -293,69 +183,27 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: "\u30EC\u30A4\u30E4\u30FC10"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC10"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8e18af1c2964e0048b13290849088b6a
-    layerID: 11
-    mosaicPosition: {x: 2002, y: 3576}
-  - name: "\u30EC\u30A4\u30E4\u30FC9"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC9"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 16c8ddb7d09398349bba931a177bb905
-    layerID: 10
-    mosaicPosition: {x: 2010, y: 3576}
-  - name: village platforms
-    spriteName: village platforms
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b7d360452099f6040acf45c8c3e8183a
-    layerID: 9
-    mosaicPosition: {x: 2690, y: 802}
-  - name: village paltfrom constr
-    spriteName: village paltfrom constr
-    isGroup: 0
-    parentIndex: -1
-    spriteID: dc835842782944243a042928a9e8d33e
-    layerID: 15
-    mosaicPosition: {x: 1339, y: 802}
-  - name: fruits
-    spriteName: fruits
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a7925bcae3c8ffd4898f56427e9bf76f
-    layerID: 16
-    mosaicPosition: {x: 4, y: 4}
-  - name: fruit stales
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 21
-    mosaicPosition: {x: 0, y: 0}
-  - name: paths
-    spriteName: paths
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 10bb66fa40bc54b45adc77bb8b9e1052
-    layerID: 14
-    mosaicPosition: {x: 1339, y: 4}
-  - name: platform
-    spriteName: platform
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8791c23d69d4ed34fbf980c379d4be59
-    layerID: 8
-    mosaicPosition: {x: 1339, y: 3576}
   - name: platform constr
     spriteName: platform constr
     isGroup: 0
     parentIndex: -1
-    spriteID: 050d085171d8a3246b41c39d4f882e1e
-    layerID: 13
-    mosaicPosition: {x: 1339, y: 2739}
+    spriteID: 6d012ad68bab21b449b8c6b85480c2da
+    layerID: 4
+    mosaicPosition: {x: 4, y: 4}
+  - name: fruits
+    spriteName: fruits
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b13ed79967389a649828baa1756de674
+    layerID: 3
+    mosaicPosition: {x: 2593, y: 4}
+  - name: fruit stales
+    spriteName: fruit stales
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 21045fc7cf0dbe745bdabf463ba3298f
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1517}
   characterData:
     bones: []
     parts: []

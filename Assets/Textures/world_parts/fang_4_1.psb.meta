@@ -98,7 +98,7 @@ ScriptedImporter:
       y: 4
       width: 2208
       height: 2219
-    spriteID: 0f1ccc03910065e4ab725a63d3cd5823
+    spriteID: b51a4d08e1cac0741bcb5159a37a6c18
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -143,8 +143,8 @@ ScriptedImporter:
     spriteName: "\u30EC\u30A4\u30E4\u30FC7"
     isGroup: 0
     parentIndex: -1
-    spriteID: 0f1ccc03910065e4ab725a63d3cd5823
-    layerID: 8
+    spriteID: b51a4d08e1cac0741bcb5159a37a6c18
+    layerID: 6
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []

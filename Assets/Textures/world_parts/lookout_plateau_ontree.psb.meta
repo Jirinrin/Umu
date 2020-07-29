@@ -87,50 +87,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: "\u30EC\u30A4\u30E4\u30FC7"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 229
-      y: 410
-      width: 241
-      height: 30
-    spriteID: fcd70ccef78f29e4f9e5a886eaee0d7b
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 201, y: -14}
-  - name: "\u30EC\u30A4\u30E4\u30FC9"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 410
-      width: 217
-      height: 355
-    spriteID: ff0a4a2daf4f81e438e40ab8bc950ead
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -55, y: 322}
   - name: "\u30EC\u30A4\u30E4\u30FC8"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -140,9 +96,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 339
-      height: 398
-    spriteID: 6929fa3b7e058d04185ff20558f55d93
+      width: 342
+      height: 454
+    spriteID: fcd70ccef78f29e4f9e5a886eaee0d7b
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -152,46 +108,32 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -27, y: 4}
+    uvTransform: {x: -24, y: 4}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 512
-  importedTextureHeight: 1024
+  importedTextureHeight: 512
   documentSize: {x: 438, y: 516}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
   textureActualWidth: 512
-  textureActualHeight: 1024
+  textureActualHeight: 512
   spritePackingTag: 
-  resliceFromLayer: 0
+  resliceFromLayer: 1
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: "\u30EC\u30A4\u30E4\u30FC7"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC7"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: fcd70ccef78f29e4f9e5a886eaee0d7b
-    layerID: 5
-    mosaicPosition: {x: 229, y: 410}
-  - name: "\u30EC\u30A4\u30E4\u30FC9"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC9"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: ff0a4a2daf4f81e438e40ab8bc950ead
-    layerID: 7
-    mosaicPosition: {x: 4, y: 410}
   - name: "\u30EC\u30A4\u30E4\u30FC8"
     spriteName: "\u30EC\u30A4\u30E4\u30FC8"
     isGroup: 0
     parentIndex: -1
-    spriteID: 6929fa3b7e058d04185ff20558f55d93
-    layerID: 6
+    spriteID: fcd70ccef78f29e4f9e5a886eaee0d7b
+    layerID: 5
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []

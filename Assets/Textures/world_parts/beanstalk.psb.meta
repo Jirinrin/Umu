@@ -94,8 +94,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3104
-      y: 4
+      x: 1524
+      y: 3511
       width: 1439
       height: 2701
     spriteID: b3097c23e716f3e4091a7b2b3916c26b
@@ -108,7 +108,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2886, y: -1236}
+    uvTransform: {x: 1306, y: 2271}
   - name: "\u30EC\u30A4\u30E4\u30FC12"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -131,37 +131,15 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1473, y: -429}
-  - name: deco
+  - name: side
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1524
-      y: 3511
-      width: 1545
-      height: 3534
-    spriteID: dee559ed8fa17b948be9b6b8fdeb0cf4
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1345, y: 1785}
-  - name: "\u30EC\u30A4\u30E4\u30FC8"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1524
-      y: 7053
+      x: 4
+      y: 5910
       width: 1281
       height: 675
     spriteID: 0a8c6c62d6d622841952fc7ddc982d87
@@ -174,7 +152,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1362, y: 5431}
+    uvTransform: {x: -158, y: 4288}
   - name: "\u30EC\u30A4\u30E4\u30FC11"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -213,14 +191,14 @@ ScriptedImporter:
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 8192
+  importedTextureWidth: 4096
   importedTextureHeight: 8192
   documentSize: {x: 1999, y: 6124}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 8192
+  textureActualWidth: 4096
   textureActualHeight: 8192
   spritePackingTag: 
   resliceFromLayer: 0
@@ -233,7 +211,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b3097c23e716f3e4091a7b2b3916c26b
     layerID: 9
-    mosaicPosition: {x: 3104, y: 4}
+    mosaicPosition: {x: 1524, y: 3511}
   - name: "\u30EC\u30A4\u30E4\u30FC12"
     spriteName: "\u30EC\u30A4\u30E4\u30FC12"
     isGroup: 0
@@ -241,20 +219,6 @@ ScriptedImporter:
     spriteID: e1ee2b6fa9d34ca4d8aea2af9947b4b4
     layerID: 8
     mosaicPosition: {x: 1524, y: 4}
-  - name: deco
-    spriteName: deco
-    isGroup: 0
-    parentIndex: -1
-    spriteID: dee559ed8fa17b948be9b6b8fdeb0cf4
-    layerID: 7
-    mosaicPosition: {x: 1524, y: 3511}
-  - name: "\u30EC\u30A4\u30E4\u30FC8"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC8"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 0a8c6c62d6d622841952fc7ddc982d87
-    layerID: 6
-    mosaicPosition: {x: 1524, y: 7053}
   - name: "\u30EC\u30A4\u30E4\u30FC11"
     spriteName: "\u30EC\u30A4\u30E4\u30FC11"
     isGroup: 0
@@ -262,6 +226,13 @@ ScriptedImporter:
     spriteID: f11810a79e782e447be6868ea009ee76
     layerID: 5
     mosaicPosition: {x: 4, y: 4}
+  - name: side
+    spriteName: side
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a8c6c62d6d622841952fc7ddc982d87
+    layerID: 6
+    mosaicPosition: {x: 4, y: 5910}
   characterData:
     bones: []
     parts: []

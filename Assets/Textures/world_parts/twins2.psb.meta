@@ -87,29 +87,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: "\u30EC\u30A4\u30E4\u30FC9"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1816
-      y: 4
-      width: 1370
-      height: 3485
-    spriteID: cf26459347968df4faaa6d008dbd06ec
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1343, y: -3028}
-  - name: "\u30EC\u30A4\u30E4\u30FC8"
+  - name: deco
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -118,8 +96,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1804
-      height: 3547
+      width: 1814
+      height: 6426
     spriteID: 90756a445238285499e8bbcc3eb1079c
     internalID: 0
     spriteBone: []
@@ -130,29 +108,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -25, y: -2910}
-  - name: "\u30EC\u30A4\u30E4\u30FC7"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3194
-      y: 4
-      width: 295
-      height: 2949
-    spriteID: 10276910645626946a62dca33d5cfcf6
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1738, y: -87}
+    uvTransform: {x: -25, y: -87}
   platformSettings:
   - name: Default
     overridden: 1
@@ -169,41 +125,27 @@ ScriptedImporter:
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 4096
-  importedTextureHeight: 4096
+  importedTextureWidth: 2048
+  importedTextureHeight: 8192
   documentSize: {x: 2018, y: 6622}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 4096
-  textureActualHeight: 4096
+  textureActualWidth: 2048
+  textureActualHeight: 8192
   spritePackingTag: 
-  resliceFromLayer: 0
+  resliceFromLayer: 1
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: "\u30EC\u30A4\u30E4\u30FC9"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC9"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: cf26459347968df4faaa6d008dbd06ec
-    layerID: 8
-    mosaicPosition: {x: 1816, y: 4}
-  - name: "\u30EC\u30A4\u30E4\u30FC8"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC8"
+  - name: deco
+    spriteName: deco
     isGroup: 0
     parentIndex: -1
     spriteID: 90756a445238285499e8bbcc3eb1079c
     layerID: 7
     mosaicPosition: {x: 4, y: 4}
-  - name: "\u30EC\u30A4\u30E4\u30FC7"
-    spriteName: "\u30EC\u30A4\u30E4\u30FC7"
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 10276910645626946a62dca33d5cfcf6
-    layerID: 4
-    mosaicPosition: {x: 3194, y: 4}
   characterData:
     bones: []
     parts: []
