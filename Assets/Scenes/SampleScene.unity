@@ -372,16 +372,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87707860}
   m_CullTransparentMesh: 0
---- !u!21 &109322353
+--- !u!21 &155651961
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 9
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/UIDefault/Grab
-  m_Shader: {fileID: 4800000, guid: e9ddbb0e344c9a848baa1e6a637e5ba5, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -391,20 +391,21 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &158829066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1017,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 187682010}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &193577389
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &195243117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1080,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &195243119
 EdgeCollider2D:
@@ -1096,7 +1131,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &196301566
 EdgeCollider2D:
@@ -1288,7 +1323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &237849623
 EdgeCollider2D:
@@ -1338,7 +1373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &262048135
 EdgeCollider2D:
@@ -1541,6 +1576,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1140657852954434997, guid: 599c5da39cd338c4eb99c463975b277a,
     type: 3}
   m_PrefabInstance: {fileID: 279477061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &282889307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4722204354199986295, guid: 76c1be6407045ca41ad734564452725f,
+    type: 3}
+  m_PrefabInstance: {fileID: 592492984}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &303027056
 PrefabInstance:
@@ -2040,107 +2081,6 @@ Transform:
   m_Father: {fileID: 921724955}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &350584275
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!21 &368486028
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/UIDefaultFont/Grab
-  m_Shader: {fileID: 4800000, guid: 1173a78849a29d948a012086f6565454, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!21 &381850576
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &391285694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,7 +2132,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1067833202}
+  - {fileID: 393444550}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2248,7 +2188,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 1067833202}
+  blendMaterial: {fileID: 393444550}
   componentExtensionState:
     extendedComponent: {fileID: 391285696}
     shaderProperties:
@@ -2290,6 +2230,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1944644708}
   offset: {x: 0, y: 2, z: 0}
+--- !u!21 &393444550
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &439843672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2523,73 +2497,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &482975705
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/UIDefault/Grab
-  m_Shader: {fileID: 4800000, guid: e9ddbb0e344c9a848baa1e6a637e5ba5, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_COLORBURN
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!21 &496598160
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &501005316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2705,7 +2612,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &503843752
 EdgeCollider2D:
@@ -2731,40 +2638,6 @@ EdgeCollider2D:
   - {x: 1.9748001, y: -0.48994446}
   - {x: 2.7686539, y: -1.3450241}
   - {x: 3.1601715, y: -2.1737785}
---- !u!21 &505419385
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &538507772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,40 +2765,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 561046885}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &570817926
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &592492984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2933,6 +2772,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 343722232}
     m_Modifications:
+    - target: {fileID: -8854486731964093491, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8854486731964093491, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8854486731964093491, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.05430387
+      objectReference: {fileID: 0}
+    - target: {fileID: -8854486731964093491, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9985245
+      objectReference: {fileID: 0}
+    - target: {fileID: -8854486731964093491, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7870687106507039646, guid: 76c1be6407045ca41ad734564452725f,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2947,6 +2811,81 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: beanstalk
+      objectReference: {fileID: 0}
+    - target: {fileID: -4722204354199986295, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4722204354199986295, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4722204354199986295, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.299707
+      objectReference: {fileID: 0}
+    - target: {fileID: -4722204354199986295, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95403135
+      objectReference: {fileID: 0}
+    - target: {fileID: -4722204354199986295, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4646993373416773525, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4646993373416773525, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4646993373416773525, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.11375998
+      objectReference: {fileID: 0}
+    - target: {fileID: -4646993373416773525, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9935083
+      objectReference: {fileID: 0}
+    - target: {fileID: -4646993373416773525, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4388391876220603919, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4388391876220603919, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4388391876220603919, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.31235963
+      objectReference: {fileID: 0}
+    - target: {fileID: -4388391876220603919, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9499639
+      objectReference: {fileID: 0}
+    - target: {fileID: -4388391876220603919, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4164767192529137769, guid: 76c1be6407045ca41ad734564452725f,
         type: 3}
@@ -2963,6 +2902,106 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: -4027791569223942671, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4027791569223942671, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4027791569223942671, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.11464203
+      objectReference: {fileID: 0}
+    - target: {fileID: -4027791569223942671, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9934069
+      objectReference: {fileID: 0}
+    - target: {fileID: -4027791569223942671, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3424802207537856374, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3424802207537856374, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3424802207537856374, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.083849244
+      objectReference: {fileID: 0}
+    - target: {fileID: -3424802207537856374, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99647844
+      objectReference: {fileID: 0}
+    - target: {fileID: -3424802207537856374, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2972919597565000139, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2972919597565000139, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2972919597565000139, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.031744383
+      objectReference: {fileID: 0}
+    - target: {fileID: -2972919597565000139, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99949604
+      objectReference: {fileID: 0}
+    - target: {fileID: -2972919597565000139, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -430124631694849140, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -430124631694849140, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -430124631694849140, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3800994
+      objectReference: {fileID: 0}
+    - target: {fileID: -430124631694849140, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92494565
+      objectReference: {fileID: 0}
+    - target: {fileID: -430124631694849140, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 932944065562179680, guid: 76c1be6407045ca41ad734564452725f,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2978,6 +3017,31 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1629744984121042182, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629744984121042182, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629744984121042182, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.101323664
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629744984121042182, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99485356
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629744984121042182, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2318696611812891106, guid: 76c1be6407045ca41ad734564452725f,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2988,6 +3052,31 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2542558702107114907, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542558702107114907, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542558702107114907, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.120630294
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542558702107114907, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99269754
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542558702107114907, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3306440723092551083, guid: 76c1be6407045ca41ad734564452725f,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2997,6 +3086,106 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325513799916773046, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325513799916773046, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325513799916773046, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06531047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325513799916773046, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.997865
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325513799916773046, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625379703201149799, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625379703201149799, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625379703201149799, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.046702713
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625379703201149799, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9989089
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625379703201149799, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651625004353543679, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651625004353543679, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651625004353543679, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.10197994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651625004353543679, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99478644
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651625004353543679, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899449359547364721, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899449359547364721, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899449359547364721, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.24927115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899449359547364721, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96843374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899449359547364721, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8651101506208748292, guid: 76c1be6407045ca41ad734564452725f,
         type: 3}
@@ -3053,6 +3242,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8876071688936731585, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876071688936731585, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876071688936731585, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.122008406
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876071688936731585, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9925291
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876071688936731585, guid: 76c1be6407045ca41ad734564452725f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -8834983257570165622, guid: 76c1be6407045ca41ad734564452725f,
     type: 3}
@@ -3062,6 +3276,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 592492984}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &592870205
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &600931499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,7 +3339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &600931501
 EdgeCollider2D:
@@ -3111,16 +3359,16 @@ EdgeCollider2D:
   m_Points:
   - {x: -1.8714981, y: 0.054595947}
   - {x: 3.2756157, y: -0.053100586}
---- !u!21 &616119219
+--- !u!21 &617057425
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 9
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Overlay
-  m_Shader: {fileID: 4800000, guid: fad3a5643793ced4bb1cc0524aa42df0, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_SCREEN ETC1_EXTERNAL_ALPHA
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3134,10 +3382,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _BLENDMODES_OverlayTexture:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -3146,7 +3390,6 @@ Material:
     - PixelSnap: 0
     - _EnableExternalAlpha: 0
     m_Colors:
-    - _BLENDMODES_OverlayColor: {r: 1, g: 1, b: 1, a: 0.7607843}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3414,7 +3657,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 482975705}
+  blendMaterial: {fileID: 909558193}
   componentExtensionState:
     extendedComponent: {fileID: 668841130}
     shaderProperties:
@@ -3454,7 +3697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 482975705}
+  m_Material: {fileID: 909558193}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -3564,6 +3807,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &720689756
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/ParticlesAdditive/Grab
+  m_Shader: {fileID: 4800000, guid: 0ba95868bc3d566418caf08681461d7c, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: d408821a20b6ebe4fbb4b2a0bc6aa35f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1.2669643
+    m_Colors:
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &748842518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3917,16 +4187,16 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 789151507}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &811476312
+--- !u!21 &804304508
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 9
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
+  m_Name: Hidden/BlendModes/SpritesDefault/Overlay
+  m_Shader: {fileID: 4800000, guid: fad3a5643793ced4bb1cc0524aa42df0, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_SCREEN ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3940,6 +4210,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BLENDMODES_OverlayTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -3948,9 +4222,59 @@ Material:
     - PixelSnap: 0
     - _EnableExternalAlpha: 0
     m_Colors:
+    - _BLENDMODES_OverlayColor: {r: 1, g: 1, b: 1, a: 0.7607843}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &810504903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810504904}
+  - component: {fileID: 810504905}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &810504904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810504903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 282889307}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &810504905
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810504903}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.3649153, y: 1.771985}
+  - {x: 3.0057201, y: 0.2570711}
 --- !u!1001 &821589874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3962,7 +4286,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1415132458}
+      objectReference: {fileID: 1176472970}
     - target: {fileID: -8655137109573955150, guid: 5c6774eea21660e4a9534a6b78e5be98,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -4098,7 +4422,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 2101495662}
+  blendMaterial: {fileID: 1554958887}
   componentExtensionState:
     extendedComponent: {fileID: 821589877}
     shaderProperties:
@@ -4155,7 +4479,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &830685091
 EdgeCollider2D:
@@ -4262,7 +4586,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &866483111
 EdgeCollider2D:
@@ -4347,7 +4671,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &880257286
 EdgeCollider2D:
@@ -4739,7 +5063,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &900258801
 EdgeCollider2D:
@@ -4771,16 +5095,16 @@ EdgeCollider2D:
   - {x: 17.629234, y: -0.5046463}
   - {x: 19.768944, y: -0.6104584}
   - {x: 24.675697, y: -1.4060516}
---- !u!21 &904467890
+--- !u!21 &909558193
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 9
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/ParticlesAdditive/Grab
-  m_Shader: {fileID: 4800000, guid: 0ba95868bc3d566418caf08681461d7c, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION
+  m_Name: Hidden/BlendModes/UIDefault/Grab
+  m_Shader: {fileID: 4800000, guid: e9ddbb0e344c9a848baa1e6a637e5ba5, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_COLORBURN
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4791,13 +5115,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: d408821a20b6ebe4fbb4b2a0bc6aa35f, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _InvFade: 1.2669643
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
     m_Colors:
-    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &917971774
 GameObject:
   m_ObjectHideFlags: 0
@@ -4953,7 +5283,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &930998167
 EdgeCollider2D:
@@ -5018,7 +5348,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 1327400948}
+  blendMaterial: {fileID: 1952819782}
   componentExtensionState:
     extendedComponent: {fileID: 965118344}
     shaderProperties:
@@ -5083,7 +5413,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1327400948}
+  - {fileID: 1952819782}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5129,6 +5459,40 @@ Transform:
   m_Father: {fileID: 472313032}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &986421308
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1005925605
 GameObject:
   m_ObjectHideFlags: 0
@@ -5158,7 +5522,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1005925607
 EdgeCollider2D:
@@ -5276,40 +5640,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1018483718}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1032017344
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1039816342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5339,7 +5669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1039816344
 EdgeCollider2D:
@@ -5361,6 +5691,40 @@ EdgeCollider2D:
   - {x: -2.5117416, y: 0.4343872}
   - {x: 3.511589, y: 0.28131104}
   - {x: 3.8098373, y: 0.15570831}
+--- !u!21 &1045853633
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1061004216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5467,40 +5831,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1061004216}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1067833202
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1076036533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5626,7 +5956,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1102434313
 EdgeCollider2D:
@@ -5726,6 +6056,40 @@ PrefabInstance:
     - {fileID: 6100000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
     - {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+--- !u!21 &1130662393
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1167120281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5755,7 +6119,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1167120283
 EdgeCollider2D:
@@ -5884,6 +6248,40 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!21 &1176472970
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1182321587
 GameObject:
   m_ObjectHideFlags: 0
@@ -5913,7 +6311,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1182321589
 EdgeCollider2D:
@@ -6308,6 +6706,73 @@ Transform:
   m_Father: {fileID: 472313032}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1250669012
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/UIDefault/Grab
+  m_Shader: {fileID: 4800000, guid: e9ddbb0e344c9a848baa1e6a637e5ba5, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!21 &1251282680
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1259037223
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,8 +6825,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1507110800}
-  - {fileID: 1507110800}
+  - {fileID: 1699312602}
+  - {fileID: 1699312602}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11145,7 +11610,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 1507110800}
+  blendMaterial: {fileID: 1699312602}
   componentExtensionState:
     extendedComponent: {fileID: 1259037225}
     shaderProperties:
@@ -11316,7 +11781,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1275077756
 EdgeCollider2D:
@@ -11374,7 +11839,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 616119219}
+  - {fileID: 804304508}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11463,7 +11928,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 616119219}
+  blendMaterial: {fileID: 804304508}
   componentExtensionState:
     extendedComponent: {fileID: 1277204470}
     shaderProperties:
@@ -11491,40 +11956,6 @@ MonoBehaviour:
       vectorValue: {x: 0, y: 0, z: 0, w: 0}
       floatValue: 0
       textureValue: {fileID: 0}
---- !u!21 &1279804616
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1280615169
 GameObject:
   m_ObjectHideFlags: 0
@@ -11581,8 +12012,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 904467890}
-  - {fileID: 904467890}
+  - {fileID: 720689756}
+  - {fileID: 720689756}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16339,7 +16770,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 904467890}
+  blendMaterial: {fileID: 720689756}
   componentExtensionState:
     extendedComponent: {fileID: 1280615171}
     shaderProperties:
@@ -16454,40 +16885,6 @@ EdgeCollider2D:
   - {x: -3.08918, y: 0.22855186}
   - {x: -1.6172581, y: 0.03299713}
   - {x: 4.2812405, y: 0.2455101}
---- !u!21 &1327400948
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_OVERLAY ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1331093602
 GameObject:
   m_ObjectHideFlags: 0
@@ -16517,7 +16914,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1331093604
 EdgeCollider2D:
@@ -16698,7 +17095,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1357029435
 EdgeCollider2D:
@@ -16812,7 +17209,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1032017344}
+      objectReference: {fileID: 1130662393}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 8425012101227889057, guid: 4e7e57328de0a1c45b3aabd852db24e9,
     type: 3}
@@ -16876,7 +17273,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 811476312}
+  blendMaterial: {fileID: 193577389}
   componentExtensionState:
     extendedComponent: {fileID: 1407870762}
     shaderProperties:
@@ -16920,40 +17317,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.5
---- !u!21 &1415132458
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1423785851
 GameObject:
   m_ObjectHideFlags: 0
@@ -17220,7 +17583,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 368486028}
+  blendMaterial: {fileID: 1555997720}
   componentExtensionState:
     extendedComponent: {fileID: 1456790080}
     shaderProperties: []
@@ -17236,7 +17599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 368486028}
+  m_Material: {fileID: 1555997720}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -17382,83 +17745,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1465759377}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1507110800
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/ParticlesAdditive/Grab
-  m_Shader: {fileID: 4800000, guid: 0ba95868bc3d566418caf08681461d7c, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2aa0518ac5a67354b860efb19c499f7a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors:
-    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1525764490
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1525764491}
-  - component: {fileID: 1525764492}
-  m_Layer: 0
-  m_Name: platform (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1525764491
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525764490}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.31, y: 11.45, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1958939685}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &1525764492
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525764490}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.172513, y: 0.19031715}
-  - {x: 0.77881145, y: 0.13181877}
-  - {x: 3.2568388, y: 0.28899956}
 --- !u!1 &1546936562
 GameObject:
   m_ObjectHideFlags: 0
@@ -17531,7 +17817,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 350584275}
+      objectReference: {fileID: 2109893154}
     - target: {fileID: -5244723442795702417, guid: 7fb793bc192b7e94c93cb2278e2e28a1,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -17687,7 +17973,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 1588267441}
+  blendMaterial: {fileID: 1045853633}
   componentExtensionState:
     extendedComponent: {fileID: 1550946504}
     shaderProperties:
@@ -17744,7 +18030,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1554675853
 EdgeCollider2D:
@@ -17767,7 +18053,7 @@ EdgeCollider2D:
   - {x: -0.15927696, y: 0.0928607}
   - {x: 2.3488255, y: -0.06852102}
   - {x: 6.835848, y: -0.020289898}
---- !u!21 &1588267441
+--- !u!21 &1554958887
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 9
@@ -17777,6 +18063,73 @@ Material:
   m_Name: Hidden/BlendModes/SpritesDefault/Grab
   m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
   m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!21 &1555997720
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/UIDefaultFont/Grab
+  m_Shader: {fileID: 4800000, guid: 1173a78849a29d948a012086f6565454, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!21 &1575620652
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17830,7 +18183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1595370596
 EdgeCollider2D:
@@ -17867,40 +18220,6 @@ EdgeCollider2D:
   - {x: 24.89907, y: -2.6021385}
   - {x: 25.447227, y: -2.4520683}
   - {x: 27.586937, y: -1.961956}
---- !u!21 &1622926884
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1635186535
 GameObject:
   m_ObjectHideFlags: 0
@@ -18200,6 +18519,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652489168}
   m_CullTransparentMesh: 0
+--- !u!21 &1658551878
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_LINEARDODGE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!21 &1699312602
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/ParticlesAdditive/Grab
+  m_Shader: {fileID: 4800000, guid: 0ba95868bc3d566418caf08681461d7c, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2aa0518ac5a67354b860efb19c499f7a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors:
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1712776536
 GameObject:
   m_ObjectHideFlags: 0
@@ -18310,7 +18690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1719803452
 EdgeCollider2D:
@@ -18330,6 +18710,31 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.7790346, y: 0.15023041}
   - {x: 1.8015623, y: 0.1971817}
+--- !u!1 &1734953055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5736351676402476046, guid: 76c1be6407045ca41ad734564452725f,
+    type: 3}
+  m_PrefabInstance: {fileID: 592492984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1734953056
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734953055}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc4f2f0e82f209f4bbf31ff79a3fc077, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1760901806
 GameObject:
   m_ObjectHideFlags: 0
@@ -18359,7 +18764,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1760901808
 EdgeCollider2D:
@@ -18412,7 +18817,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 505419385}
+      objectReference: {fileID: 986421308}
     - target: {fileID: -3423715050947549573, guid: 97d38b54b4afa194d8bf9bb78e04a9b1,
         type: 3}
       propertyPath: m_Name
@@ -18538,7 +18943,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 2084297895}
+  blendMaterial: {fileID: 1251282680}
   componentExtensionState:
     extendedComponent: {fileID: 1776529117}
     shaderProperties:
@@ -18752,7 +19157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 109322353}
+  m_Material: {fileID: 1250669012}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -18801,7 +19206,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 109322353}
+  blendMaterial: {fileID: 1250669012}
   componentExtensionState:
     extendedComponent: {fileID: 1813761549}
     shaderProperties:
@@ -18829,40 +19234,6 @@ MonoBehaviour:
       vectorValue: {x: 0, y: 0, z: 0, w: 0}
       floatValue: 0
       textureValue: {fileID: 0}
---- !u!21 &1838494268
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1845671304
 GameObject:
   m_ObjectHideFlags: 0
@@ -18986,7 +19357,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 2132266104}
+  blendMaterial: {fileID: 1658551878}
   componentExtensionState:
     extendedComponent: {fileID: 1847363319}
     shaderProperties:
@@ -19032,7 +19403,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2132266104}
+  - {fileID: 1658551878}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19149,7 +19520,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1279804616}
+      objectReference: {fileID: 2079738793}
     - target: {fileID: -594001026769807687, guid: 18fd8f4bd1c786542b469360c2b5f8e8,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -19219,7 +19590,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1622926884}
+      objectReference: {fileID: 617057425}
     - target: {fileID: 7843399719620457356, guid: 18fd8f4bd1c786542b469360c2b5f8e8,
         type: 3}
       propertyPath: m_SortingOrder
@@ -19292,7 +19663,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 496598160}
+  blendMaterial: {fileID: 1575620652}
   componentExtensionState:
     extendedComponent: {fileID: 1868601095}
     shaderProperties:
@@ -19344,7 +19715,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 1838494268}
+  blendMaterial: {fileID: 155651961}
   componentExtensionState:
     extendedComponent: {fileID: 1868601097}
     shaderProperties:
@@ -19372,6 +19743,40 @@ MonoBehaviour:
       vectorValue: {x: 0, y: 0, z: 0, w: 0}
       floatValue: 0
       textureValue: {fileID: 0}
+--- !u!21 &1880225636
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1896143970
 GameObject:
   m_ObjectHideFlags: 0
@@ -19504,7 +19909,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 570817926}
+      objectReference: {fileID: 592870205}
     - target: {fileID: 8501404717401070153, guid: dd52d9c12d0b35f448768a4cbcbfdce6,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -19565,7 +19970,7 @@ MonoBehaviour:
   framebufferEnabled: 0
   unifiedGrabEnabled: 0
   shareMaterial: 0
-  blendMaterial: {fileID: 381850576}
+  blendMaterial: {fileID: 1880225636}
   componentExtensionState:
     extendedComponent: {fileID: 1931033406}
     shaderProperties:
@@ -19933,6 +20338,40 @@ EdgeCollider2D:
   - {x: 2.7632809, y: 0.36488473}
   - {x: 6.8535213, y: 0.12147842}
   - {x: 6.8132534, y: 0.0006688684}
+--- !u!21 &1952819782
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/BlendModes/SpritesDefault/Grab
+  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
+  m_ShaderKeywords: BLENDMODES_MODE_OVERLAY ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1953267670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2559740853152321384, guid: 9a74251ba1199644480db597309fb9ab,
@@ -19985,7 +20424,6 @@ Transform:
   - {fileID: 1326817438}
   - {fileID: 1950354379}
   - {fileID: 1896143971}
-  - {fileID: 1525764491}
   - {fileID: 1275077755}
   - {fileID: 1554675852}
   - {fileID: 1182321588}
@@ -20260,7 +20698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &2051315311
 EdgeCollider2D:
@@ -20280,7 +20718,7 @@ EdgeCollider2D:
   m_Points:
   - {x: -1.8264256, y: 0.33648872}
   - {x: 3.0667706, y: 0.22133064}
---- !u!21 &2084297895
+--- !u!21 &2079738793
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 9
@@ -20289,7 +20727,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hidden/BlendModes/SpritesDefault/Grab
   m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_DIFFERENCE ETC1_EXTERNAL_ALPHA
+  m_ShaderKeywords: BLENDMODES_MODE_EXCLUSION ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20385,7 +20823,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!21 &2101495662
+--- !u!21 &2109893154
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 9
@@ -20448,7 +20886,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1958939685}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &2131431437
 EdgeCollider2D:
@@ -20470,40 +20908,6 @@ EdgeCollider2D:
   - {x: -1.7974586, y: 0.6716461}
   - {x: 1.9289513, y: 0.7345505}
   - {x: 3.1531334, y: 0.7154312}
---- !u!21 &2132266104
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 9
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/BlendModes/SpritesDefault/Grab
-  m_Shader: {fileID: 4800000, guid: 86d19cc1bcae039408601c9048b36e6b, type: 3}
-  m_ShaderKeywords: BLENDMODES_MODE_LINEARDODGE ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1273157673341662073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8234191600149388039, guid: 9a74251ba1199644480db597309fb9ab,
