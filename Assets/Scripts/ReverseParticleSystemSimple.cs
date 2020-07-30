@@ -2,6 +2,8 @@
 
 public class ReverseParticleSystemSimple : MonoBehaviour
 {
+    [SerializeField] private float rainReverseFakeSpeed = 20f;
+
     private ParticleSystem _particleSystem;
     private ParticleSystem.MainModule _particleSystemMain;
 
@@ -53,7 +55,7 @@ public class ReverseParticleSystemSimple : MonoBehaviour
         _reverseActive = true;
         
         if (fakeReverse)
-            _particleSystemMain.simulationSpeed = 20f;
+            _particleSystemMain.simulationSpeed = rainReverseFakeSpeed;
     }
 
     public void StopReverse()
